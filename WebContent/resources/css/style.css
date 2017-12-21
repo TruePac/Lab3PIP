@@ -1,0 +1,75 @@
+@CHARSET "ISO-8859-1";
+
+p {
+	color: #424242;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 0.1em;
+	text-align: center;
+	text-transform: lowercase;
+	font-size: 14pt;
+	font-variant: small-caps;
+}
+
+
+div.centered {
+	 display: table;
+ 	 margin-top: 50px;
+     margin-bottom: 50px;
+     margin-left: auto;
+   	 margin-right: auto;
+}
+
+table.datatable {
+	font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table.datatable td, #points th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+table.datatable tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+table.datatable tr:hover {
+	background-color: #ddd;
+}
+
+table.datatable th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: rgb(230, 0, 92);
+	color: white;
+}
+
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: rgb(230, 0, 92);
+    color: white;
+    padding: 7px 10px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(128, 0, 51);
+}
+
+

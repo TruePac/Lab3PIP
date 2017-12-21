@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/templates/BasicTemplate.xhtml">
+	<ui:define name="content">
+		<h:outputScript>
+            setInterval(function() {
+                document.getElementById("hiddenForm:updatePresentDateTime").click();
+            }, 11000);
+        </h:outputScript>
+		<h:form id="hiddenForm" style="display:none">
+			<h:commandButton id="updatePresentDateTime">
+
+			</h:commandButton>
+		</h:form>
+		<h:form>
+			<div>
+				<div class="centered">
+					<h:commandButton value="To main page" action="toMain"></h:commandButton>
+				</div>
+				<div class="centered">
+					<h:outputText id="presentDateTime" value="#{timeBean.currentDate}">
+						<f:convertDateTime dateStyle="full"
+							pattern="dd.MM.yyyy HH:mm:ss z" />
+					</h:outputText>
+				</div>
+			</div>
+		</h:form>
+	</ui:define>
+</ui:composition>
+</html>
